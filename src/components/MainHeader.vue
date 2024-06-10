@@ -39,13 +39,13 @@ export default {
 <style scoped lang="scss">
 header {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   background-color: #fff;
-  padding: 20px;
+  padding: 1rem;
 
   .logo img {
-    height: 50px;
+    height: 60%;
   }
 
   nav ul {

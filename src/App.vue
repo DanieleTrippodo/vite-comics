@@ -19,7 +19,7 @@ export default{
   data() {
     return {
       infoItems: [
-        { icon: digitalComicsIcon, text: 'DIGITAL dsadasdas COMICS', alt: 'Digital Comics' },
+        { icon: digitalComicsIcon, text: 'DIGITAL COMICS', alt: 'Digital Comics' },
         { icon: merchandiseIcon, text: 'DC MERCHANDISE', alt: 'DC Merchandise' },
         { icon: subscriptionIcon, text: 'SUBSCRIPTION', alt: 'Subscription' },
         { icon: comicShopLocatorIcon, text: 'COMIC SHOP LOCATOR', alt: 'Comic Shop Locator' },
@@ -41,13 +41,13 @@ export default{
     <main>
       <div class="content">
         <!-- Content goes here -->
+         <h1> -> content goes here</h1>
       </div>
-      <div class="info-bar">
-        <div class="info-item" v-for="(item, index) in infoItems" :key="index">
-          <img :src="item.icon" :alt="item.alt" />
-          <span>{{ item.text }}</span>
-        </div>
-      </div>
+
+
+
+      <!-- todo spostare quello che ho fatto nel footer al main... (la linea blu) -->
+
     </main>
 
     <MainFooter />
@@ -61,4 +61,5 @@ export default{
 
 <style lang="scss" src="./style.css">
   /* regole SCSS */
+  @import './styles/main.scss';
 </style>

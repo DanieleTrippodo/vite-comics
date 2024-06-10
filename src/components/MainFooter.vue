@@ -39,12 +39,16 @@ export default {
 <!-- Qui va il contenuto di questo elemento (HTML) -->
 <template>
   <footer>
+
+
     <div class="info-bar">
       <div class="info-item" v-for="(item, index) in infoItems" :key="index">
         <img :src="item.icon" :alt="item.alt" />
         <span>{{ item.text }}</span>
       </div>
     </div>
+
+
     <div class="footer-content">
       <div class="footer-section" v-for="(section, index) in footerSections" :key="index">
         <h4>{{ section.title }}</h4>
@@ -53,9 +57,12 @@ export default {
         </ul>
       </div>
     </div>
+
+
     <div class="signup">
       <button>SIGN-UP NOW!</button>
     </div>
+
     <div class="social-media">
       <span>FOLLOW US</span>
       <!-- Add social media icons here -->
@@ -70,14 +77,14 @@ export default {
 footer {
   background-color: #333;
   color: #fff;
-  padding: 20px;
+  margin-top: 1rem;
 
   .info-bar {
     background-color: #007bff;
     color: #fff;
     display: flex;
     justify-content: space-around;
-    padding: 20px 0;
+    padding: 1rem 0;
 
     .info-item {
       display: flex;
@@ -85,7 +92,6 @@ footer {
       gap: 10px;
 
       img {
-        width: 50px;
         height: 50px;
       }
     }
