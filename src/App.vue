@@ -2,10 +2,10 @@
 import MainHeader from './components/MainHeader.vue';
 import MainFooter from './components/MainFooter.vue';
 
-// icone
+// // icone
 import digitalComicsIcon from './assets/img/digital-comics.png';
-import merchandiseIcon from './assets/img/merchandise.png';
-import subscriptionIcon from './assets/img/subscription.png';
+import merchandiseIcon from './assets/img/merchandiseIcon.png';
+import subscriptionIcon from './assets/img/subscriptionIcon.png';
 import comicShopLocatorIcon from './assets/img/comic-shop-locator.png';
 import dcPowerVisaIcon from './assets/img/dc-power-visa.svg';
 
@@ -19,11 +19,11 @@ export default{
   data() {
     return {
       infoItems: [
-        { icon: 'digitalComicsIcon', text: 'DIGITAL COMICS', alt: 'Digital Comics' },
-        { icon: 'merchandiseIcon', text: 'DC MERCHANDISE', alt: 'DC Merchandise' },
-        { icon: 'subscriptionIcon', text: 'SUBSCRIPTION', alt: 'Subscription' },
-        { icon: 'comicShopLocatorIcon', text: 'COMIC SHOP LOCATOR', alt: 'Comic Shop Locator' },
-        { icon: 'dcPowerVisaIcon', text: 'DC POWER VISA', alt: 'DC Power Visa' },
+        { icon: digitalComicsIcon, text: 'DIGITAL dsadasdas COMICS', alt: 'Digital Comics' },
+        { icon: merchandiseIcon, text: 'DC MERCHANDISE', alt: 'DC Merchandise' },
+        { icon: subscriptionIcon, text: 'SUBSCRIPTION', alt: 'Subscription' },
+        { icon: comicShopLocatorIcon, text: 'COMIC SHOP LOCATOR', alt: 'Comic Shop Locator' },
+        { icon: dcPowerVisaIcon, text: 'DC POWER VISA', alt: 'DC Power Visa' },
       ]
     };
   }
