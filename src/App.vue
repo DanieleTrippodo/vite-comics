@@ -2,21 +2,28 @@
 import MainHeader from './components/MainHeader.vue';
 import MainFooter from './components/MainFooter.vue';
 
+// icone
+import digitalComicsIcon from './assets/img/digital-comics.png';
+import merchandiseIcon from './assets/img/merchandise.png';
+import subscriptionIcon from './assets/img/subscription.png';
+import comicShopLocatorIcon from './assets/img/comic-shop-locator.png';
+import dcPowerVisaIcon from './assets/img/dc-power-visa.svg';
+
 
 export default{
   name: 'app',
   components: {
-    Header,
-    Footer
+    MainHeader,
+    MainFooter
   },
   data() {
     return {
       infoItems: [
-        { icon: '/src/assets/img/digital-comics.png', text: 'DIGITAL COMICS', alt: 'Digital Comics' },
-        { icon: '/src/assets/img/merchandise.png', text: 'DC MERCHANDISE', alt: 'DC Merchandise' },
-        { icon: '/src/assets/img/subscription.png', text: 'SUBSCRIPTION', alt: 'Subscription' },
-        { icon: '/src/assets/img/comic-shop-locator.png', text: 'COMIC SHOP LOCATOR', alt: 'Comic Shop Locator' },
-        { icon: '/src/assets/img/dc-power-visa.png', text: 'DC POWER VISA', alt: 'DC Power Visa' },
+        { icon: 'digitalComicsIcon', text: 'DIGITAL COMICS', alt: 'Digital Comics' },
+        { icon: 'merchandiseIcon', text: 'DC MERCHANDISE', alt: 'DC Merchandise' },
+        { icon: 'subscriptionIcon', text: 'SUBSCRIPTION', alt: 'Subscription' },
+        { icon: 'comicShopLocatorIcon', text: 'COMIC SHOP LOCATOR', alt: 'Comic Shop Locator' },
+        { icon: 'dcPowerVisaIcon', text: 'DC POWER VISA', alt: 'DC Power Visa' },
       ]
     };
   }
@@ -27,13 +34,13 @@ export default{
 
 
 <template>
- 
-  <Mainheader />
+  <div>
 
+    <MainHeader />
 
-  <main>
+    <main>
       <div class="content">
-        <!-- Content here -->
+        <!-- Content goes here -->
       </div>
       <div class="info-bar">
         <div class="info-item" v-for="(item, index) in infoItems" :key="index">
@@ -41,11 +48,11 @@ export default{
           <span>{{ item.text }}</span>
         </div>
       </div>
-  </main>
+    </main>
 
+    <MainFooter />
 
-  <MainFooter />
-
+  </div>
 </template>
 
 
