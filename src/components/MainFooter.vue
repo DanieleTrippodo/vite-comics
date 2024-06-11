@@ -77,7 +77,12 @@ export default {
 footer {
   background-color: #333;
   color: #fff;
-  margin-top: 1rem;
+  padding-top: 0;
+
+  background-image: url('../assets/img/footer-bg.jpg');
+  background-size: cover; 
+  background-repeat: no-repeat;
+  background-position: center; 
 
   .info-bar {
     background-color: #007bff;
