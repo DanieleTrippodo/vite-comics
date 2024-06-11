@@ -6,10 +6,10 @@ export default {
     return {
       infoItems: [
         { icon: '/src/assets/img/digital-comics.png', text: 'DIGITAL COMICS', alt: 'Digital Comics' },
-        { icon: '/src/assets/img/merchandise.png', text: 'DC MERCHANDISE', alt: 'DC Merchandise' },
-        { icon: '/src/assets/img/subscription.png', text: 'SUBSCRIPTION', alt: 'Subscription' },
+        { icon: '/src/assets/img/merchandiseIcon.png', text: 'DC MERCHANDISE', alt: 'DC Merchandise' },
+        { icon: '/src/assets/img/subscriptionIcon.png', text: 'SUBSCRIPTION', alt: 'Subscription' },
         { icon: '/src/assets/img/comic-shop-locator.png', text: 'COMIC SHOP LOCATOR', alt: 'Comic Shop Locator' },
-        { icon: '/src/assets/img/dc-power-visa.png', text: 'DC POWER VISA', alt: 'DC Power Visa' },
+        { icon: '/src/assets/img/dc-power-visa.svg', text: 'DC POWER VISA', alt: 'DC Power Visa' },
       ],
       footerSections: [
         {
@@ -59,14 +59,20 @@ export default {
     </div>
 
 
-    <div class="signup">
+    <div class="signup flex-follow">
       <button>SIGN-UP NOW!</button>
+
+
+      <div class="social-media">
+        <span>FOLLOW US</span>
+        <!-- Add social media icons here -->
+      </div>
+
+
     </div>
 
-    <div class="social-media">
-      <span>FOLLOW US</span>
-      <!-- Add social media icons here -->
-    </div>
+
+
   </footer>
 </template>
 
@@ -79,6 +85,11 @@ footer {
   color: #fff;
   padding-top: 0;
 
+  /* for fixing the white space on the footer!   :o */
+  margin-bottom: 0px;
+  padding-bottom: 2.1rem;
+  /* for fixing the white space on the footer!   :o */
+
   background-image: url('../assets/img/footer-bg.jpg');
   background-size: cover; 
   background-repeat: no-repeat;
@@ -90,6 +101,7 @@ footer {
     display: flex;
     justify-content: space-around;
     padding: 1rem 0;
+    margin-bottom: 2rem;
 
     .info-item {
       display: flex;
@@ -145,5 +157,17 @@ footer {
 
     /* Add styles for social media icons here */
   }
+}
+
+
+.flex-follow{
+  display: flex;
+  justify-content: flex-start;
+  align-items: baseline;
+
+  gap: 5rem;
+  margin-left: 1rem;
+  padding-left: 5rem;
+  padding-top: 3rem;
 }
 </style>

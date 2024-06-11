@@ -19,3 +19,18 @@ Per oggi diamo priorità alla struttura: quando è tutto bello solido, passiamo 
 
 Bonus:
 Creare un componente aggiuntivo per gestire la fascia azzurra con le icone.
+
+
+
+# Esercizio 2
+
+Esercizio di oggi: :pizza: Vite DC Comics :pizza:
+nome repo: vite-comics
+
+
+> Descrizione:
+    Continuate a lavorare nella stessa repo di ieri e create un nuovo componente che rappresenterà le card dei fumetti.
+
+    Utilizzate i dati presenti nel file json che trovate in allegato e passateli al componente Card tramite props.
+
+    Una volta inseriti tutti i contenuti dinamicamente, completate il vostro layout e rifinite i dettagli con Sass.

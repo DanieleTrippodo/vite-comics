@@ -1,6 +1,7 @@
 <script>
 import MainHeader from './components/MainHeader.vue';
 import MainFooter from './components/MainFooter.vue';
+import ComicList from './components/ComicList.vue';
 
 // // icone
 import digitalComicsIcon from './assets/img/digital-comics.png';
@@ -14,7 +15,8 @@ export default{
   name: 'app',
   components: {
     MainHeader,
-    MainFooter
+    MainFooter,
+    ComicList
   },
   data() {
     return {
@@ -36,22 +38,31 @@ export default{
 <template>
   <div>
 
+    <!-- -Header -->
     <MainHeader />
+    <!-- -Header -->
 
+
+
+    <!-- -Main--------------------------------------------------------------------------- -->
     <main>
+
+
       <div class="content">
         <!-- Content goes here -->
-         <h1> -> content goes here</h1>
+         <h1> -> content goesdds here</h1>
       </div>
 
-
-
-      <!-- todo spostare quello che ho fatto nel footer al main... (la linea blu) -->
+      <ComicList />
 
     </main>
+    <!-- -Main -------------------------------------------------------------------------- -->
 
+
+
+    <!-- -Footer -->
     <MainFooter />
-
+    <!-- -Footer -->
   </div>
 </template>
 
