@@ -90,16 +90,16 @@ footer {
   padding-bottom: 2.1rem;
   /* for fixing the white space on the footer!   :o */
 
-  background-image: url('../assets/img/footer-bg.jpg');
-  background-size: cover; 
-  background-repeat: no-repeat;
-  background-position: center; 
+  background-image: url('../assets/img/dc-logo-bg.png'), url(../assets/img/footer-bg.jpg);
+  background-size: 30%, cover; 
+  background-repeat: no-repeat,no-repeat;
+  background-position: bottom right, center; 
 
   .info-bar {
     background-color: #007bff;
     color: #fff;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     padding: 1rem 0;
     margin-bottom: 2rem;
 
@@ -107,9 +107,11 @@ footer {
       display: flex;
       align-items: center;
       gap: 10px;
+      height: 10rem;
 
       img {
-        height: 50px;
+      
+        height: 80px;
       }
     }
   }

@@ -33,6 +33,7 @@ export default {
 
 
     </div>
+    <button class=""> Load More </button>
   </div>
 </template>
 
@@ -87,5 +88,20 @@ export default {
 
   display: inline;
   margin-left: 1.9rem;
+}
+
+
+button{
+  background-color: #007bff;
+  color: white;
+  padding: .6rem;
+  margin-bottom: 1rem;
+
+
+  font-size: 1.4rem;
+  padding-left: 4rem;
+  padding-right: 4rem;
+
+  border: none;
 }
 </style>

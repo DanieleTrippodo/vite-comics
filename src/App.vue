@@ -47,12 +47,7 @@ export default{
     <!-- -Main--------------------------------------------------------------------------- -->
     <main>
 
-
-      <div class="content">
-        <!-- Content goes here -->
-         <h1> -> content goesdds here</h1>
-      </div>
-
+      <!-- sezione 'Current Series' -->
       <ComicList />
 
     </main>
