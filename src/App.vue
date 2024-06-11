@@ -47,6 +47,11 @@ export default{
     <!-- -Main--------------------------------------------------------------------------- -->
     <main>
 
+
+      <!-- todo - Aggiungere il Jumbotron - Da cambiare -->
+      <img src="./assets/img/jumbotron.jpg" alt="PlaceHolder" id="Jumbotron">
+
+
       <!-- sezione 'Current Series' -->
       <ComicList />
 
