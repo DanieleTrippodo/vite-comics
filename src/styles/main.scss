@@ -1,4 +1,11 @@
 #Jumbotron{
     overflow: hidden;  /* si usa quando il contenuto è più grande del contenitore, per nascondere l'elemento che esce fuori */
-    width: 10%;
+    width: 100%;
+}
+
+
+
+button{
+    border: none;
+    cursor: pointer;
 }

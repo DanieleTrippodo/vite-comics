@@ -63,9 +63,12 @@ export default {
       <button>SIGN-UP NOW!</button>
 
 
-      <div class="social-media">
+      <div class="social-media flex-social">
         <span>FOLLOW US</span>
-        <!-- Add social media icons here -->
+        
+        <img src="../assets/img/footer-twitter.png" alt="Twitter" class="SocialIcon">
+        <img src="../assets/img/footer-facebook.png" alt="Facebook" class="SocialIcon">
+        <img src="../assets/img/footer-youtube.png" alt="Youtube" class="SocialIcon">
       </div>
 
 
@@ -152,9 +155,14 @@ footer {
   .social-media {
     text-align: center;
 
+
+    .SocialIcon{
+      width: 50%;
+    }
+
+
     span {
       display: block;
-      margin-bottom: 10px;
     }
 
     /* Add styles for social media icons here */
@@ -164,12 +172,23 @@ footer {
 
 .flex-follow{
   display: flex;
-  justify-content: flex-start;
-  align-items: baseline;
+  justify-content: space-between;
+  align-items: center;
 
-  gap: 5rem;
   margin-left: 1rem;
   padding-left: 5rem;
   padding-top: 3rem;
+  padding-right: 5rem;
+}
+
+
+.flex-social{
+  display: flex;
+  gap: 1rem;
+  align-items: flex-end;
+  justify-content: space-between;
+  align-content: center;
+  flex-wrap: nowrap;
+  flex-direction: row;
 }
 </style>
